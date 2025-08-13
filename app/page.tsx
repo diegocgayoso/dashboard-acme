@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6 bg-gray-900">
+    <main className="flex flex-col p-6 ">
       <div className={styles.shape}>
         <AcmeLogo />
       </div>
