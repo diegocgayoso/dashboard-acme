@@ -1,22 +1,25 @@
-"use client";
-import { AtSymbolIcon, KeyIcon } from "@heroicons/react/24/outline";
-import { ArrowRightIcon } from "@heroicons/react/20/solid";
-import { Button } from "./button";
-import { useRouter } from "next/navigation";
+"use client"
+import {
+  AtSymbolIcon,
+  KeyIcon,
+} from '@heroicons/react/24/outline';
+import { ArrowRightIcon } from '@heroicons/react/20/solid';
+import { Button } from './button';
+import { useRouter } from 'next/navigation';
 
 export default function LoginForm() {
   const router = useRouter();
-
-  function onSubmit() {
-    console.log("submit");
-    router.push("/dashboard");
+  
+  function onSubmit(){
+    console.log('submit');
+    router.push('/dashboard');
   }
   return (
     <form className="space-y-3">
-      <h1 className="mb-3 text-2xl text-zinc-400">
-        Please log in to continue.
-      </h1>
       <div className="flex-1 rounded-lg bg-gray-800 px-6 pb-4 pt-8">
+        <h1 className="mb-3 text-2xl text-zinc-400">
+          Please log in to continue.
+        </h1>
         <div className="w-full">
           <div>
             <label
